@@ -1,3 +1,6 @@
 *.1 linguist-generated
+*.train.1 linguist-generated
+*.dev.1 linguist-generated
+*.test.1 linguist-generated
 *.0 linguist-generated
 
