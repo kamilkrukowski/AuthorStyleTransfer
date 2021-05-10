@@ -1,1 +1,1 @@
-python style_transfer.py --train ../data/8-26/8-26.train --dev ../data/8-26/8-26.dev --output ../tmp4/8-26.dev --vocab ../tmp4/8-26.vocab --model ../tmp4/model
+python style_transfer.py --test ../data/8-26/8-26.test --output ../tmp7/8-26.dev --vocab ../tmp7/8-26.vocab --model ../tmp7/model --load_model true --beam 8

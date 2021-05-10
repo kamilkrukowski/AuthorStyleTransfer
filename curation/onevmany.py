@@ -5,11 +5,10 @@ from random import shuffle
 
 assert len(sys.argv) == 3, "Usage: Python util.py [index authora] [index authorb]" ;
 
-def process(a, b, capa=None, capb=None):
+def process(a,capa=None, capb=None):
     a = str(a)
     aout = open(a + '.out','w')
-    b = str(b)
-    bout = open(b + '.out','w')
+    bout = open('many.out','w')
     step = 15
     start = int(step/2)
     stop = 1000 - 3*start
@@ -17,6 +16,9 @@ def process(a, b, capa=None, capb=None):
         capa=-1
     if capb==None:
         capb=-1
+    counts = []
+    for i in range(51):
+        counts.append(0)
     with open('data.csv','r') as f:
         data = f.readline()
         data = f.readline().strip().split(',')
@@ -26,11 +28,12 @@ def process(a, b, capa=None, capb=None):
                 for i in np.arange(start, stop, step):
                     aout.write(''.join([j + ' ' for j in data[i:i+step]]) + '\n')
                 capa-=1
-            elif data[1] == b and capb != 0:
+            elif counts[int(data[1])] <= capb:
+                ind = int(data[1])
                 data = data[0].split(' ')
                 for i in np.arange(start, stop, step):
                     bout.write(''.join([j + ' ' for j in data[i:i+step]]) + '\n')
-                capb-=1
+                counts[ind]+=1
             data = f.readline().strip().split(',')
 
 
@@ -38,7 +41,7 @@ def split(name, a,is0, train=0.9, dev=0.05, test=0.05):
     assert train + dev + test == 1.0, "Split does not add up to 1.0";
     assert is0 == 0 or is0 == 1, "Need bool";
     if not os.path.exists("../data/" + name):
-        os.mkdir(name)
+        os.mkdir('../data/' + name)
     name = "../data/" + name + '/' + name
     a = str(a)
     adata = open(a + '.out','r').read().strip().split('\n')
@@ -61,8 +64,9 @@ def split(name, a,is0, train=0.9, dev=0.05, test=0.05):
 
 a = int(sys.argv[1])
 
-process(a)
+process(a,capb=180)
 name = str(a) + '-many'
 split(name,a,0,train=0.7,test=0.2,dev=0.1)
-split(name,b,1,train=0.7,test=0.2,dev=0.1)
+split(name,'many',1,train=0.7,test=0.2,dev=0.1)
 os.system('rm {}'.format(str(a) + '.out'))
+os.system('rm {}'.format('many' + '.out'))

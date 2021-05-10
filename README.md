@@ -5,7 +5,12 @@ The method learns to perform style transfer between two non-parallel corpora. Fo
 ## Dependencies
 Python 2.7, TensorFlow 1.3.0, ipdb, ntlk
 
-References:
+## Note on Usage
+Computational resources used: 128g GPU w/ 4 Cuda Threads.
+Many thanks to Tufts HPSC for providing the computational resources required.
+Training required ~14 hours per model.
+
+## References
 This repo contains the code and data of the following paper:
 
 <i> "Style Transfer from Non-Parallel Text by Cross-Alignment". Tianxiao Shen, Tao Lei, Regina Barzilay, and Tommi Jaakkola. NIPS 2017. [arXiv](https://arxiv.org/abs/1705.09655)</i>

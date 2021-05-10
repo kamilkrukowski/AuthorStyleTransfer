@@ -10,7 +10,7 @@ def process(a, b, capa=None, capb=None):
     aout = open(a + '.out','w')
     b = str(b)
     bout = open(b + '.out','w')
-    step = 15
+    step = 10
     start = int(step/2)
     stop = 1000 - 3*start
     if capa==None:
