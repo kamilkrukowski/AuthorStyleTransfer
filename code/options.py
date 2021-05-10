@@ -10,10 +10,10 @@ def load_arguments():
             default='')
     argparser.add_argument('--dev',
             type=str,
-            default='')
+            default='../data/8-26/8-26.dev')
     argparser.add_argument('--test',
             type=str,
-            default='')
+            default='../data/8-26/8-26.test')
     argparser.add_argument('--online_testing',
             type=bool,
             default=False)
