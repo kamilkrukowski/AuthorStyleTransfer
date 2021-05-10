@@ -1,3 +1,2 @@
 #!/bin/bash
-A="2-11"
-python style_transfer.py --train ../data/$A/2-11.train --dev ../data/$A/2-11.dev --output ../tmp2/2-11.dev --vocab ../tmp2/2-11.vocab --model ../tmp2/model
+python style_transfer.py --train ../data/37-39/37-39.train --dev ../data/37-39/37-39.dev --output ../tmp3/37-39.dev --vocab ../tmp3/37-39.vocab --model ../tmp3/model
