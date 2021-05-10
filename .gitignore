@@ -1,0 +1,10 @@
+tmp/*
+tmp2/*
+tmp3/*
+tmp4/*
+tmp5/*
+tmp6/*
+curation/data.csv
+classifier/*
+*.swp
+*.swo

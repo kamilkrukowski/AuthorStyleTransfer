@@ -12,5 +12,5 @@ This repo contains the code and data of the following paper:
 
 This repo makes use of the victorian authorship dataset from the following:
 
-<i> "Style Transfer from Non-Parallel Text by Cross-Alignment". Tianxiao Shen, Tao Lei, Regina Barzilay, and Tommi Jaakkola. NIPS 2017. [arXiv](https://arxiv.org/abs/1705.09655)</i>
+<i> Gungor, A. (2018). Fifty Victorian Era Novelists Authorship Attribution Data. Purdue Universitym Master Thesis. http://dx.doi.org/10.7912/D2N65J</i>
 
