@@ -37,3 +37,13 @@ This repo makes use of the victorian authorship dataset from the following:
 
 <i> Gungor, A. (2018). Fifty Victorian Era Novelists Authorship Attribution Data. Purdue Universitym Master Thesis. http://dx.doi.org/10.7912/D2N65J</i>
 
+## Citations
+
+“Style transformer: Unpaired text style transfer without disentangled latent representation”. arXiv preprint arXiv:1905.05621 (2019)  
+ "Style Transfer from Non-Parallel Text by Cross-Alignment". Tianxiao Shen, Tao Lei, Regina Barzilay, and Tommi Jaakkola. NIPS (2017)  
+“Reinforced Rewards Framework For Style Transfer” arXiv:2005.05256 [cs.CL] (2020)  
+“Formality Style Transfer with Shared Latent Space, Wang (2020)”  
+"Style Transfer from Non-Parallel Text by Cross-Alignment". Tianxiao Shen, Tao Lei, Regina Barzilay, and Tommi Jaakkola. NIPS (2017)  
+“A Dual Reinforcement Learning Framework for Unsupervised Text Style Transfer” Fuli Luo , Peng Li , Jie Zhou , Pengcheng Yang , Baobao Chang , Zhifang Sui , Xu Sun (2018)  
+Gkhayes. “author_attribution.” GitHub, github.com/gkhayes/author_attribution.  
+Gungor, A. (2018). Fifty Victorian Era Novelists Authorship Attribution Data. IUPUI University Library. http://dx.doi.org/10.7912/D2N65J  
